@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Notes Generator</title>
+</head>
+<body>
+    <h2>AI Notes Generator</h2>
+
+    <form method="POST">
+        <textarea name="text" rows="10" cols="80"
+        placeholder="Paste your text here..."></textarea><br><br>
+        <button type="submit">Generate Notes</button>
+    </form>
+
+    {% if notes %}
+    <h3>Generated Notes:</h3>
+    <p>{{ notes }}</p>
+    {% endif %}
+</body>
+</html>
